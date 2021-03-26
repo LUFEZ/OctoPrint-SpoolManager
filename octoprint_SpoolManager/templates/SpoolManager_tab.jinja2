@@ -163,7 +163,7 @@
                     </div></td>
                 <td data-bind="visible: $root.tableAttributeVisibility.lastFirstUse"><span data-bind="text: formatOnlyDate($data, 'lastUse')"></span><br><span data-bind="text: formatOnlyDate($data, 'firstUse')"></span></td>
                 <td data-bind="visible: $root.tableAttributeVisibility.weight" style="text-align: right;"><span data-bind="text: remainingWeight"></span>g<br><span data-bind="text: totalWeight"></span>g</td>
-                <td data-bind="visible: $root.tableAttributeVisibility.used" style="text-align: right;"><span data-bind="text: usedPercentage"></span>%<br><span data-bind="text: usedLength"></span>mm</td>
+                <td data-bind="visible: $root.tableAttributeVisibility.used" style="text-align: right;"><span data-bind="text: usedPercentage"></span>%<br><span data-bind="text: formatMM2M(usedLength)"></span> m</td>
                 <td data-bind="visible: $root.tableAttributeVisibility.note"><span data-bind="html: noteHtml, attr: { title: noteText }"></span></td>
               </tr>
             </tbody>

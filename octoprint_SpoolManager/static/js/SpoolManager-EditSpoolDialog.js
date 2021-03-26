@@ -79,6 +79,13 @@ function SpoolManagerEditSpoolDialog(){
             }
             return "";
         };
+        formatMM2M = function (data){
+            if (isNaN(data())){
+                return 0;
+            }
+            m = data() / 1000;
+            return m.toFixed(2).replace(/[.]/,',');
+        }
 
         this.selectedFromQRCode = ko.observable(false);
         // - list all attributes
